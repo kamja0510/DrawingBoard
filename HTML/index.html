@@ -8,7 +8,33 @@
     <title>Drawing Board</title>
 </head>
 <body>
-    
+    <canvas class = "canvas"></canvas>
+    <div class="controls">
+        <div class="controls__brush">
+            <input                       
+                type = "range" 
+                min = "1" 
+                max = "10" 
+                value = "5.5" 
+                step = "0.1"
+            />      <!-- 최소, 최대, 기본값, 옮길 수 있는 최소단위 -->
+        </div>
+        <div class="controls__btns">
+            <button id="mode">FILL</button>
+            <button id="save">SAVE</button>
+        </div>
+        <div class="controls__colors">
+            <div class="controls__color" style = "background-color : white"></div>
+            <div class="controls__color" style = "background-color : red"></div>
+            <div class="controls__color" style = "background-color : orange"></div>
+            <div class="controls__color" style = "background-color : yellow"></div>
+            <div class="controls__color" style = "background-color : #00FF00"></div>
+            <div class="controls__color" style = "background-color : cyan"></div>
+            <div class="controls__color" style = "background-color : #0080FF"></div>
+            <div class="controls__color" style = "background-color : rgb(99, 46, 243)"></div>
+            <div class="controls__color" style = "background-color : black"></div>
+        </div>
+    </div>
     <script src =  "../JS/paint.js"></script>
 </body>
 </html>
